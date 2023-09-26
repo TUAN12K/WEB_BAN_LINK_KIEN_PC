@@ -1,5 +1,6 @@
 package com.example.web_ban_link_kien_pc.model;
 
+<<<<<<< HEAD
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -43,4 +44,7 @@ public class HoaDon {
     private String soDienThoai;
     @Column(name = "trang_thai")
     private Integer trangThai;
+=======
+public class HoaDon {
+>>>>>>> 5d16ccaf1809d816321bc6053cc7a3115cc4235d
 }
