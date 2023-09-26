@@ -1,6 +1,5 @@
 package com.example.web_ban_link_kien_pc.model;
 
-<<<<<<< HEAD
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
@@ -36,7 +35,4 @@ public class HoaDonChiTiet {
     @Column(name = "don_gia")
     private BigDecimal donGia;
 
-=======
-public class HoaDonChiTiet {
->>>>>>> 5d16ccaf1809d816321bc6053cc7a3115cc4235d
 }
