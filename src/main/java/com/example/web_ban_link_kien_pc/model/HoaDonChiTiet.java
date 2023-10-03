@@ -22,9 +22,9 @@ public class HoaDonChiTiet {
     @GenericGenerator(name = "uuid2", strategy = "uuid2")
     @Column(name = "id", updatable = false, nullable = false, columnDefinition = "VARCHAR(36)")
     private String id;
-//    @ManyToOne
-//    @JoinColumn(name = "id_chi_tiet_san_pham")
-//    private ChiTietSanPham chiTietSanPham;
+    @ManyToOne
+    @JoinColumn(name = "id_chi_tiet_san_pham")
+    private ChiTietSanPham chiTietSanPham;
     @ManyToOne
     @JoinColumn(name = "id_hoa_don")
     private HoaDon hoaDon;
