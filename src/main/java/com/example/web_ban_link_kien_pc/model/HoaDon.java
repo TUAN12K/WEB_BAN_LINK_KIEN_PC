@@ -22,8 +22,8 @@ public class HoaDon {
     @Column(name = "id", updatable = false, nullable = false, columnDefinition = "VARCHAR(36)")
     private String id;
     @ManyToOne
-//    @JoinColumn(name = "id_tai_khoan")
-//    private TaiKhoan taiKhoan;
+    @JoinColumn(name = "id_tai_khoan")
+    private TaiKhoan taiKhoan;
     @Column(name = "ma", unique = true, nullable = false, length = 36)
     private String ma;
     @Column(name = "ngay_tao")
