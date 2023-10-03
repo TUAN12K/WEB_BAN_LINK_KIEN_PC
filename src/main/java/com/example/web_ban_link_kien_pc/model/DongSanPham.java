@@ -31,4 +31,5 @@ public class DongSanPham {
     private String ma;
     @Column(name = "ten", columnDefinition = "NVARCHAR(70)")
     private String ten;
+
 }
