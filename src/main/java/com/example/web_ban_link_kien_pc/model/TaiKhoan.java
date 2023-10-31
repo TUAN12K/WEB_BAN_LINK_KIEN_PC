@@ -29,7 +29,7 @@ public class TaiKhoan {
     @GenericGenerator(name = "uuid2", strategy = "uuid2")
     @Column(name = "id", updatable = false, nullable = false, columnDefinition = "VARCHAR(36)")
     private String id;
-    @Column(name = "ma", unique = true, nullable = false, length = 36)
+    @Column(name = "ma", length = 36)
     private String ma;
     @Column(name = "ho_ten", columnDefinition = "VARCHAR(40)")
     private String hoTen;

@@ -47,15 +47,15 @@ public class ChiTietSanPham {
     @ManyToOne
     @JoinColumn(name = "id_bo_nho")
     private BoNho boNho;
-    @Column(name = "gia_nhap", nullable = false)
+    @Column(name = "gia_nhap")
     private BigDecimal giaNhap;
-    @Column(name = "gia_ban", nullable = false)
+    @Column(name = "gia_ban")
     private BigDecimal giaBan;
-    @Column(name = "gia_ban_dau", nullable = false)
+    @Column(name = "gia_ban_dau")
     private BigDecimal giaBanDau;
-    @Column(name = "ngay_tao", nullable = false)
+    @Column(name = "ngay_tao")
     private Date ngayTao;
-    @Column(name = "so_luong", nullable = false)
+    @Column(name = "so_luong")
     private Integer soLuong;
     @Column(name = "nam_bao_hanh", nullable = false)
     private Integer namBaoHanh;

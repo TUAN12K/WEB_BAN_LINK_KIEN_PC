@@ -124,12 +124,7 @@ public class ThongKeController {
             ChiTietSanPham chiTietSanPham = iChiTietSanPhamRepository.findById(id).get();
             listss.add(new HoaDonChiTietViewModel(tongSoLuong, chiTietSanPham));
         }
-        Collections.sort(listss, new Comparator<HoaDonChiTietViewModel>() {
-            @Override
-            public int compare(HoaDonChiTietViewModel o1, HoaDonChiTietViewModel o2) {
-                return o2.getSoLuong().compareTo(o1.getSoLuong());
-            }
-        });
+        Collections.sort(listss, (o1, o2) -> o2.getSoLuong().compareTo(o1.getSoLuong()));
         List<HoaDonChiTietViewModel> first10Elements = listss.subList(0, Math.min(listss.size(), 10));
         //TỒN KHO
         List<ChiTietSanPham> listChiTietSanPhams = iChiTietSanPhamRepository.getSanPhamTonKho();
