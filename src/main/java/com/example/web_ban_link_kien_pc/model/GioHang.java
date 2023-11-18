@@ -1,9 +1,7 @@
 package com.example.web_ban_link_kien_pc.model;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
@@ -15,7 +13,10 @@ import lombok.Setter;
 import lombok.ToString;
 import org.hibernate.annotations.GenericGenerator;
 
-import java.util.Date;
+import lombok.AllArgsConstructor;
+import org.springframework.data.annotation.Id;
+
+import java.sql.Date;
 
 @AllArgsConstructor
 @NoArgsConstructor
